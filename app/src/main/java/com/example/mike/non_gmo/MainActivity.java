@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -26,6 +27,11 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+    }
+
+    public void OnStart(){
+       //camera.open();
+        BarcodeDetector barcodeDetector = new BarcodeDetector.Builder(conext).build();
     }
 
     @Override
